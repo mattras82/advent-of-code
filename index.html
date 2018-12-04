@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MattRas82's Advent of Code</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <p>Enter in the year, day, and problem number that you'd like to solve for.</p>
+            <input type="number" name="year" id="year" placeholder="Year">
+            <input type="number" name="day" id="day" placeholder="Day" min="1" max="25">
+            <input type="radio" name="problem" id="first" value="first" checked>
+            <label for="first">First</label>
+            <input type="radio" name="problem" id="second" value="second">
+            <label for="second">Second</label>
+            <br>
+            <button type="submit" id="go">Solve!</button>
+        </div>
+        <div class="answer-container">
+            <p>The answer is:</p>
+            <p id="answer"></p>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
