@@ -33,7 +33,8 @@ const solutions = {
             } else {
                 alert('Something went wrong');
             }
-        } catch {
+        } catch(e) {
+            console.log(e);
             alert('Incorrect input');
         }
     }

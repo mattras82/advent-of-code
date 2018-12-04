@@ -7,11 +7,12 @@ body, html {
 .container {
   display: flex;
   flex-flow: column wrap;
-  margin: 1rem;
+  margin: 1rem auto;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
+  max-width: 50rem;
 }
 
 input[type="number"] {
@@ -24,22 +25,23 @@ input[type="number"] {
 }
 
 input[type="number"]:focus {
-  border-color: #04f060;
+  border-color: #14cc60;
 }
 
 button {
-  background-color: #04f060;
-  border: none;
+  background-color: #14cc60;
+  border: 1px solid #cd342a;
   min-width: 125px;
   font-weight: bold;
   display: inline-block;
   margin: 1.25rem 0 0.75rem;
   padding: 0.65rem 1.125rem;
+  cursor: pointer;
   transition: background-color 300ms ease-in-out;
 }
 
 button:hover {
-  background-color: #14cc60;
+  background-color: #10ac50;
 }
 
 .answer-container {
